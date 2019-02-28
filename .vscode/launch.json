@@ -18,5 +18,9 @@
 			"sourceMaps": true,
 			"outDir": "${workspaceRoot}/.vscode/.react"
 		}
+	],
+	"runtimeArgs": [
+		"-r",
+		"flow-remove-types/register"
 	]
 }
