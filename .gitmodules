@@ -1,0 +1,3 @@
+[submodule "react-fix"]
+	path = react-fix
+	url = git@bitbucket.org:emanuilov/react-fix.git
