@@ -1,4 +1,6 @@
 [ignore]
+.*/node_modules/react-native-windows
+
 ; We fork some components by platform
 .*/*[.]android.js
 
