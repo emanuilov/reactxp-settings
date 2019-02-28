@@ -3,12 +3,13 @@ Basic settings, linting and scripts, so you can start developing with ReactXP in
 The ESLint is set to test JavaScript only.
 
 # Prerequisites
-1. VS Code - https://code.visualstudio.com/download
-2. NPM & Yarn
-3. `npm install -g create-rx-app cross-env`
-4. (Optional) Android SDK
-5. (Optional) Windows 10 SDK
-6. (Optional) iOS SDK
+1. [VS Code](https://code.visualstudio.com/download)
+2. VSCode extension - [Flow Language Support](https://marketplace.visualstudio.com/items?itemName=flowtype.flow-for-vscode)
+3. [NPM](https://nodejs.org/en/) & `npm install -g yarn`
+4. `npm install -g create-rx-app cross-env`
+5. (Optional) Android SDK
+6. (Optional) Windows 10 SDK
+7. (Optional) iOS SDK
 
 # Creating a new project
 1. `create-rx-app newprojectname --javascript`
