@@ -15,7 +15,7 @@ The ESLint is set to test JavaScript only.
 2. Start the android app via yarn start:android
    - If it starts delete /react-fix and ./gitmodules
    - If it doesn't(an error appears):
-   		1. Run `git submodules init` in this project
+   		1. Run `git submodule init` in this project
    		2. copy /react-fix/android to the main directory of your new project
 
 # Applying the new settings
