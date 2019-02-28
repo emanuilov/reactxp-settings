@@ -6,22 +6,25 @@
 	"lint-staged": {
 		"src/**/*.{js,jsx,json,css,md}": [
 			"yarn lint",
+			"yarn test",
 			"git add"
 		]
 	},
 	"scripts": {
-		"rn-cli": "node node_modules/react-native/local-cli/cli.js",
+		"rn:cli": "node node_modules/react-native/local-cli/cli.js",
 		"start:windows": "yarn rn-cli run-windows",
 		"start:web": "cross-env platform=web webpack-dev-server --config=web/webpack/dev.js --progress --colors --mode=development",
 		"build:web": "cross-env platform=web webpack --config=web/webpack/prod.js --progress --colors --mode=production",
 		"build:android": "yarn prebuild && cd android && gradlew.bat assembleRelease",
 		"install:android": "adb install android/app/build/outputs/apk/release/app-release.apk",
 		"clean:android": "cd android && gradlew.bat clean",
-		"prebuild": "yarn lint && yarn test",
-		"precommit": "lint-staged && yarn test",
-		"test": "jest --passWithNoTests",
-		"lint": "eslint --fix src",
-		"test:watch": "yarn test --watch",
+		"prebuild": "yarn lint src && yarn test",
+		"precommit": "lint-staged",
+		"lint": "yarn eslint --fix",
+		"test": "yarn type:test && yarn unit:test",
+		"type:test": "yarn flow",
+		"unit:test": "yarn jest --passWithNoTests",
+		"test:watch": "yarn unit:test --watch",
 		"test:debug": "node --inspect-brk node_modules/.bin/jest -c jest.config.js --runInBand"
 	},
 	"dependencies": {
@@ -51,6 +54,7 @@
 		"eslint-plugin-jsx-a11y": "^6.2.1",
 		"eslint-plugin-prettier": "^3.0.1",
 		"eslint-plugin-react": "^7.12.4",
+		"flow-bin": "^0.93.0",
 		"html-webpack-plugin": "^3.2.0",
 		"husky": "^1.3.1",
 		"jest": "^24.1.0",
