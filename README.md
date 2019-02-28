@@ -1,4 +1,4 @@
-[# Overview
+# Overview
 Basic settings, linting and scripts, so you can start developing with ReactXP in VSCode straight away.
 The ESLint is set to test JavaScript only.
 
