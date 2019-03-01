@@ -136,7 +136,7 @@ Replace `index` or `index.js` with the new location
 cd ./android/app; keytool -genkey -v -keystore <name>.keystore -alias <alias> -keyalg RSA -keysize 2048 -validity 10000
 ```
 ## You should have a backup of this keystore, because its being ignored by git for security reasons
-1. Add these variables in <root-dir>/android/gradle.properties with the correct data:
+2. Add these variables in <root-dir>/android/gradle.properties with the correct data:
 ```
 RELEASE_STORE_FILE=name.keystore
 RELEASE_KEY_ALIAS=alias
@@ -148,6 +148,10 @@ RELEASE_KEY_PASSWORD=password
 # Installing the release version
 1. Android - `yarn install:android`
 2. iOS - `?`
+
+# Emulators
+1. Android
+   - If you would like to use the `yarn emulator:android` command you need to have previously created an AVD with name Nexus
 
 # Cleaning
 1. Android - `yarn clean:android`
