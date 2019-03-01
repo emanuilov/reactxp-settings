@@ -41,6 +41,7 @@
 		"@babel/preset-flow": "^7.0.0",
 		"babel-eslint": "^10.0.1",
 		"babel-loader": "^8.0.5",
+		"babel-plugin-jest-hoist": "^24.1.0",
 		"compression-webpack-plugin": "^2.0.0",
 		"enzyme": "^3.9.0",
 		"enzyme-adapter-react-16": "^1.10.0",
@@ -49,6 +50,7 @@
 		"eslint-config-airbnb": "^17.1.0",
 		"eslint-config-prettier": "^4.1.0",
 		"eslint-loader": "^2.1.2",
+		"eslint-plugin-flowtype": "^3.4.2",
 		"eslint-plugin-import": "^2.16.0",
 		"eslint-plugin-jest": "^22.3.0",
 		"eslint-plugin-jsx-a11y": "^6.2.1",
@@ -66,7 +68,8 @@
 		"webpack": "^4.29.5",
 		"webpack-cli": "^3.2.3",
 		"webpack-dev-server": "^3.2.1",
-		"webpack-merge": "^4.2.1"
+		"webpack-merge": "^4.2.1",
+		"yarn": "^1.13.0"
 	},
 	"jest": {
 		"preset": "react-native"
