@@ -18,6 +18,7 @@ The ESLint is set to test JavaScript only.
     - If it doesn't(an error appears):
         1. Run `git submodule init; git submodule update` in this project
         2. copy /react-fix/android to the main directory of your new project
+        3. Change the project applicationID to the package name(in MainActivity.java) in /android/app/build.gradle
 
 # Applying the new settings
 #### Do this in the new project's directory
